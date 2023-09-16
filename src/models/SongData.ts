@@ -48,9 +48,23 @@ export interface GameData {
        */
       color: string;
     }[];
+    /**
+     * List of 'Magic: The Gathering' chart color codings available
+     */
+    mtgColor?: {
+      /**
+       * A unique string key to identify this color
+       */
+      key: string;
+      /**
+       * A css color to use to visually define this color
+       */
+      color: string;
+    }[];
     flags: UniqueStringArr1;
     lvlMax: number;
     usesDrawGroups?: boolean;
+    [k: string]: unknown;
   };
   /**
    * Defines the default configuration for this game
@@ -106,6 +120,10 @@ export interface Chart {
    * e.g. expert/challenge
    */
   diffClass: string;
+  /**
+   * 'Magic: The Gathering' color coding: White, Blue, Black, Red, Green
+   */
+  mtgColor?: string;
   /**
    * in-game numeric rating
    */

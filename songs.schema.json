@@ -12,7 +12,7 @@
       "type": "object",
       "description": "Describes unique configuration options for this game",
       "required": ["lastUpdated", "styles", "difficulties", "lvlMax", "flags"],
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "menuParent": {
           "type": "string",
@@ -39,6 +39,26 @@
               "color": {
                 "type": "string",
                 "description": "A css color to use to visually define this difficulty class"
+              }
+            },
+            "required": ["key", "color"],
+            "additionalProperties": false
+          },
+          "additionalItems": false
+        },
+        "mtgColor": {
+          "type": "array",
+          "description": "List of 'Magic: The Gathering' chart color codings available",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string",
+                "description": "A unique string key to identify this color"
+              },
+              "color": {
+                "type": "string",
+                "description": "A css color to use to visually define this color"
               }
             },
             "required": ["key", "color"],
@@ -151,6 +171,10 @@
         "diffClass": {
           "type": "string",
           "description": "e.g. expert/challenge"
+        },
+        "mtgColor": {
+          "type": "string",
+          "description": "'Magic: The Gathering' color coding: White, Blue, Black, Red, Green"
         },
         "lvl": {
           "type": "integer",

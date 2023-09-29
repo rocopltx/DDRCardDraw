@@ -29,27 +29,27 @@
     ],
     "mtgColor": [
       {
-        "key": "White",
+        "key": "white",
         "color": "#F8E7B9"
       },
       {
-        "key": "Blue",
+        "key": "blue",
         "color": "#B3CEEA"
       },
       {
-        "key": "Black",
+        "key": "black",
         "color": "#A69F9D"
       },
       {
-        "key": "Red",
+        "key": "red",
         "color": "#EB9F82"
       },
       {
-        "key": "Green",
+        "key": "green",
         "color": "#C4D3CA"
       },
       {
-        "key": "Uncolored",
+        "key": "uncolored",
         "color": "#ffffff"
       }
     ],
@@ -87,6 +87,12 @@
       "difficult": "Difficult",
       "expert": "Expert",
       "challenge": "Challenge",
+      "white": "White (\"MA Checks\")",
+      "blue": "Blue (\"Knowledge Checks\")",
+      "black": "Black (\"Hardest-to-Time Songs\")",
+      "red": "Red (\"Advanced Footwork and Rhythms\")",
+      "green": "Green (\"Stamina Intensive\")",
+      "uncolored": "Uncolored",
       "unlock": "Unlockable songs",
       "goldExclusive": "20th Gold Cab Exclusive",
       "goldenLeague": "Golden League",
@@ -32502,7 +32508,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "white"
         },
         {
           "lvl": 8,
@@ -57762,7 +57768,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "white"
         },
         {
           "lvl": 5,

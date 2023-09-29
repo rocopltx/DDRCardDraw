@@ -34,6 +34,7 @@
       "orderByAction": "Re-order by pick/ban",
       "style": "Style",
       "difficulties": "Difficulties",
+      "mtgColor": "MTG-Style Chart Color",
       "include": "Include",
       "tabs": {
         "general": "General",

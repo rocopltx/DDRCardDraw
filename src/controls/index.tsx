@@ -468,13 +468,13 @@ function GeneralSettings() {
                 onChange={(e) => {
                   const { checked, value } = e.currentTarget;
                   updateState((s) => {
-                    const mtgColors = new Set(s.mtgColor);
+                    const mtgColor = new Set(s.mtgColor);
                     if (checked) {
-                      mtgColors.add(value);
+                      mtgColor.add(value);
                     } else {
-                      mtgColors.delete(value);
+                      mtgColor.delete(value);
                     }
-                    return { mtgColors };
+                    return { mtgColor };
                   });
                 }}
                 label={t("meta." + mtgc.key)}

@@ -669,7 +669,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "blue"
         },
         {
           "lvl": 5,
@@ -5986,7 +5986,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 8,
@@ -14056,7 +14056,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "blue"
         },
         {
           "step": 171,
@@ -21558,7 +21558,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "blue"
         },
         {
           "step": 226,
@@ -30514,7 +30514,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "challenge",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 3,
@@ -30582,7 +30582,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "green"
         },
         {
           "step": 282,
@@ -31188,7 +31188,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "white"
         },
         {
           "step": 575,
@@ -33622,7 +33622,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "challenge",
-          "mtgColor": "uncolored"
+          "mtgColor": "white"
         },
         {
           "lvl": 15,
@@ -34650,7 +34650,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "blue"
         },
         {
           "lvl": 16,
@@ -37467,7 +37467,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "difficult",
-          "mtgColor": "uncolored"
+          "mtgColor": "blue"
         },
         {
           "step": 607,
@@ -40513,7 +40513,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "white"
         },
         {
           "step": 199,
@@ -42113,7 +42113,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "blue"
         },
         {
           "lvl": 7,
@@ -42315,7 +42315,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 7,
@@ -45303,7 +45303,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 7,
@@ -45497,7 +45497,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 225,
@@ -48938,7 +48938,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 219,
@@ -55832,7 +55832,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "difficult",
-          "mtgColor": "uncolored"
+          "mtgColor": "blue"
         },
         {
           "step": 704,
@@ -59208,7 +59208,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 147,
@@ -65272,7 +65272,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "blue"
         },
         {
           "lvl": 6,

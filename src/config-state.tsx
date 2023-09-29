@@ -15,6 +15,7 @@ export interface ConfigState {
   constrainPocketPicks: boolean;
   style: string;
   difficulties: ReadonlySet<string>;
+  mtgColor: ReadonlySet<string>;
   flags: ReadonlySet<string>;
   showPool: boolean;
   playerNames: string[];
@@ -37,6 +38,7 @@ export const useConfigState = createWithEqualityFn<ConfigState>(
     constrainPocketPicks: true,
     style: "",
     difficulties: new Set(),
+    mtgColor: new Set(),
     flags: new Set(),
     showPool: false,
     playerNames: [],

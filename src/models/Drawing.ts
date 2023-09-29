@@ -10,6 +10,8 @@ export interface EligibleChart {
   bpm: string;
   diffAbbr: string;
   diffColor: string;
+  mtgColorAbbr?: string;
+  mtgColorColor?: string;
   level: number;
   drawGroup?: number;
   flags: string[];

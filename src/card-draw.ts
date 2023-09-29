@@ -5,6 +5,8 @@ import { DrawnChart, EligibleChart, Drawing } from "./models/Drawing";
 import { ConfigState } from "./config-state";
 import { getDifficultyColor } from "./hooks/useDifficultyColor";
 import { getDiffAbbr } from "./game-data-utils";
+import { getMTGColorColor } from "./hooks/useMTGColorColor";
+import { getMTGColorAbbr } from "./game-data-utils";
 
 export function getDrawnChart(
   gameData: GameData,
@@ -25,6 +27,9 @@ export function getDrawnChart(
     // Fill in variant data per game
     diffAbbr: getDiffAbbr(gameData, chart.diffClass),
     diffColor: getDifficultyColor(gameData, chart.diffClass),
+    // Eclipse 2023 DDR A20+
+    mtgColorAbbr: getMTGColorAbbr(gameData, chart.mtgColor ?? "UNC"),
+    mtgColorColor: getMTGColorColor(gameData, chart.mtgColor ?? "uncolored"),
   };
 }
 
@@ -53,6 +58,7 @@ export function chartIsValid(
   return (
     chart.style === config.style &&
     config.difficulties.has(chart.diffClass) &&
+    config.mtgColor.has(chart.mtgColor ?? "uncolored") &&
     levelMetric >= config.lowerBound &&
     levelMetric <= config.upperBound &&
     (!chart.flags || chart.flags.every((f) => config.flags.has(f)))

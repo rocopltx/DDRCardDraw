@@ -95,6 +95,7 @@ function buildPersistedConfig(): PersistedConfigV1 {
   const serialized = {
     ...configState,
     difficulties: Array.from(configState.difficulties),
+    mtgColor: Array.from(configState.mtgColor),
     flags: Array.from(configState.flags),
   };
   const ret: PersistedConfigV1 = {
@@ -127,6 +128,7 @@ async function loadPersistedConfig(saved: PersistedConfigV1) {
   useConfigState.setState({
     ...saved.configState,
     difficulties: new Set(saved.configState.difficulties),
+    mtgColor: new Set(saved.configState.mtgColor),
     flags: new Set(saved.configState.flags),
   });
 }

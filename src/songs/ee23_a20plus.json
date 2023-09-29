@@ -9904,7 +9904,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "black"
         },
         {
           "step": 178,
@@ -20178,7 +20178,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "black"
         },
         {
           "step": 525,
@@ -28833,7 +28833,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "difficult",
-          "mtgColor": "uncolored"
+          "mtgColor": "black"
         },
         {
           "lvl": 16,
@@ -35005,7 +35005,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "black"
         },
         {
           "step": 516,
@@ -35083,7 +35083,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "difficult",
-          "mtgColor": "uncolored"
+          "mtgColor": "black"
         },
         {
           "step": 546,
@@ -35170,7 +35170,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "difficult",
-          "mtgColor": "uncolored"
+          "mtgColor": "black"
         },
         {
           "step": 525,
@@ -36409,7 +36409,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "difficult",
-          "mtgColor": "uncolored"
+          "mtgColor": "black"
         },
         {
           "lvl": 17,
@@ -66156,7 +66156,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "difficult",
-          "mtgColor": "uncolored"
+          "mtgColor": "black"
         },
         {
           "lvl": 17,
@@ -69182,7 +69182,7 @@
           "lvl": 14,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "black"
         },
         {
           "step": 237,

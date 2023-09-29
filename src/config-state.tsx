@@ -15,7 +15,7 @@ export interface ConfigState {
   constrainPocketPicks: boolean;
   style: string;
   difficulties: ReadonlySet<string>;
-  mtgColor: ReadonlySet<string>;
+  mtgColor: ReadonlySet<string>; // Eclipse 2023 DDR A20+
   flags: ReadonlySet<string>;
   showPool: boolean;
   playerNames: string[];

@@ -49,6 +49,27 @@ function getAvailableDifficulties(gameData: GameData, selectedStyle: string) {
   return gameData.meta.difficulties.filter((d) => s.has(d.key));
 }
 
+// Eclipse 2023 DDR A20+
+function getAvailableMTGColors(gameData: GameData, selectedMTGColor: string) {
+  // Fall back to use the uncolored dict.
+  const notDefined = [
+    {
+      "key": "uncolored",
+      "color": "#ffffff"
+    }
+  ]
+  const s = new Set<string>();
+  for (const f of gameData.songs) {
+    for (const c of f.charts) {
+      if (c.style === selectedMTGColor) {
+        s.add(c.mtgColor ?? "uncolored");
+      }
+    }
+  }
+  return gameData.meta.mtgColor ?? notDefined.filter((d) => s.has(d.key));
+}
+
+
 function getDiffsAndRangeForNewStyle(
   gameData: GameData,
   selectedStyle: string,
@@ -254,6 +275,7 @@ function GeneralSettings() {
     upperBound,
     update: updateState,
     difficulties: selectedDifficulties,
+    mtgColor: selectedMTGColor, // Eclipse 2023 DDR A20+
     style: selectedStyle,
     chartCount,
   } = configState;
@@ -263,6 +285,12 @@ function GeneralSettings() {
     }
     return getAvailableDifficulties(gameData, selectedStyle);
   }, [gameData, selectedStyle]);
+  const availableMTGColors = useMemo(() => {
+    if (!gameData) {
+      return [];
+    }
+    return getAvailableMTGColors(gameData, selectedStyle);
+  }, [gameData, selectedStyle])
   const isNarrow = useIsNarrow();
   const [expandFilters, setExpandFilters] = useState(false);
 
@@ -427,6 +455,29 @@ function GeneralSettings() {
                   });
                 }}
                 label={t("meta." + dif.key)}
+              />
+            ))}
+          </FormGroup>
+          <FormGroup label={t("controls.mtgColor")}>
+            {availableMTGColors.map((mtgc) => (
+              <Checkbox
+                key={`${mtgc.key}`}
+                name="mtgColor"
+                value={mtgc.key}
+                checked={selectedMTGColor.has(mtgc.key)}
+                onChange={(e) => {
+                  const { checked, value } = e.currentTarget;
+                  updateState((s) => {
+                    const mtgColors = new Set(s.mtgColor);
+                    if (checked) {
+                      mtgColors.add(value);
+                    } else {
+                      mtgColors.delete(value);
+                    }
+                    return { mtgColors };
+                  });
+                }}
+                label={t("meta." + mtgc.key)}
               />
             ))}
           </FormGroup>

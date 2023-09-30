@@ -6,6 +6,7 @@ export interface ConfigState {
   upperBound: number;
   lowerBound: number;
   useWeights: boolean;
+  useWeightsColor: boolean; // Eclipse 2023 DDR A20+
   orderByAction: boolean;
   hideVetos: boolean;
   weights: number[];
@@ -30,6 +31,7 @@ export const useConfigState = createWithEqualityFn<ConfigState>(
     upperBound: 0,
     lowerBound: 0,
     useWeights: false,
+    useWeightsColor: false,
     hideVetos: false,
     orderByAction: true,
     weights: [],

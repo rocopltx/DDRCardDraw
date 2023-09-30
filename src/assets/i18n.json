@@ -10,7 +10,9 @@
     },
     "weights": {
       "explanation": "Set a fixed probability that charts of each difficulty level will be drawn.",
+      "explanationColor": "Set a fixed probability that charts of each selected color will be drawn.",
       "forcedExplanation": "Sets a fixed limit on exactly how many charts of each difficulty level will be drawn.",
+      "forcedExplanationColor": "Sets a fixed limit on exactly how many charts of each color will be drawn.",
       "check": {
         "title": "Prevents very unlikely outcomes (e.g. multiple 17s drawn when at 10% chance)",
         "label": "Force Expected Distribution"
@@ -31,6 +33,8 @@
       "lowerBoundTier": "Tier Min",
       "constrainPocketPicks": "Pocket picks must match draw options",
       "useWeightedDistributions": "Use Weighted Distributions",
+      "useWeightedLevelDistributions": "Use Weighted Level Distributions",
+      "useWeightedMTGColorDistributions": "Use Weighted Chart Color Distributions",
       "orderByAction": "Re-order by pick/ban",
       "style": "Style",
       "difficulties": "Difficulties",

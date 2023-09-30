@@ -33,6 +33,7 @@ import { GameData } from "../models/SongData";
 import { RemotePeerControls } from "../tournament-mode/remote-peer-menu";
 import { useRemotePeers } from "../tournament-mode/remote-peers";
 import { WeightsControls } from "./controls-weights";
+import { ColorWeightsControls } from "./controls-weights";
 import styles from "./controls.css";
 import { PlayerNamesControls } from "./player-names";
 import { loadConfig, saveConfig } from "../config-persistence";
@@ -268,6 +269,7 @@ function GeneralSettings() {
   const configState = useConfigState();
   const {
     useWeights,
+    useWeightsColor,
     constrainPocketPicks,
     orderByAction,
     hideVetos,
@@ -513,19 +515,33 @@ function GeneralSettings() {
           label={t("controls.hideVetos")}
         />
         <Checkbox
-          id="weighted"
+          id="weightedLevel"
           checked={useWeights}
           onChange={(e) => {
             const useWeights = !!e.currentTarget.checked;
             updateState({ useWeights });
           }}
-          label={t("controls.useWeightedDistributions")}
+          label={t("controls.useWeightedLevelDistributions")}
         />
         <Collapse isOpen={useWeights}>
           <WeightsControls
             usesTiers={usesDrawGroups}
             high={upperBound}
             low={lowerBound}
+          />
+        </Collapse>
+        <Checkbox
+          id="weightedColor"
+          checked={useWeightsColor}
+          onChange={(e) => {
+            const useWeightsColor = !!e.currentTarget.checked;
+            updateState({ useWeightsColor });
+          }}
+          label={t("controls.useWeightedMTGColorDistributions")}
+        />
+        <Collapse isOpen={useWeightsColor}>
+          <ColorWeightsControls
+            mtgColor={selectedMTGColor}
           />
         </Collapse>
       </FormGroup>

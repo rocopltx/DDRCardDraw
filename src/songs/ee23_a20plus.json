@@ -100,6 +100,14 @@
       "usLocked": "Japan-only songs",
       "tempUnlock": "Formerly unlockable (SDVX, DRS, etc)",
       "shock": "Shock arrow charts",
+      "$mtgAbbr": {
+        "white": "WHT",
+        "blue": "BLU",
+        "black": "BLK",
+        "red": "RED",
+        "green": "GRN",
+        "uncolored": "UNC"
+      },
       "$abbr": {
         "beginner": "Beg",
         "basic": "Bas",

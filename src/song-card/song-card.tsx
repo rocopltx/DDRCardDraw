@@ -90,6 +90,8 @@ export function SongCard(props: Props) {
     bpm,
     diffAbbr,
     diffColor,
+    mtgColorAbbr,
+    mtgColorColor,
     level,
     jacket,
     flags,
@@ -202,10 +204,11 @@ export function SongCard(props: Props) {
       >
         <div
           className={styles.cardFooter}
-          style={{ backgroundColor: diffColor }}
+          style={{ backgroundColor: mtgColorColor }}
         >
           <div className={styles.bpm}>{bpm} BPM</div>
           {flags.includes("shock") && <ShockBadge />}
+          <div className={styles.mtgColor}>{mtgColorAbbr}</div>
           <div className={styles.difficulty}>
             {diffAbbr} {level}
           </div>

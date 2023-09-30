@@ -541,7 +541,7 @@ function GeneralSettings() {
         />
         <Collapse isOpen={useWeightsColor}>
           <ColorWeightsControls
-            mtgColor={selectedMTGColor}
+            mtgColor = {selectedMTGColor}
           />
         </Collapse>
       </FormGroup>

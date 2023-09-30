@@ -13,7 +13,7 @@ interface Props {
 }
 
 interface ColorProps {
-  mtgColor: ReadonlySet<string>
+  mtgColor: ReadonlySet<string>;
 }
 const pctFmt = new Intl.NumberFormat(undefined, { style: "percent" });
 
@@ -149,7 +149,8 @@ export function WeightsControls({ usesTiers, high, low }: Props) {
   );
 }
 
-export function ColorWeightsControls({ mtgColor }: ColorProps) {
+// Eclipse 2023 DDR A20+
+export function ColorWeightsControls({mtgColor}: ColorProps) {
   const { t } = useIntl();
   const {
     weights,
@@ -165,8 +166,52 @@ export function ColorWeightsControls({ mtgColor }: ColorProps) {
     }),
     shallow,
   );
+  // Map the different possible colors to a number.
+  type mtgColorRecord = Record<string, number>;
+  // I don't know how to parameterize this yet.
+  const ee23Record: mtgColorRecord = {
+    "uncolored": 0,
+    "white": 1,
+    "blue": 2,
+    "black": 3,
+    "red": 4,
+    "green": 5
+  }
+  
+  // get the highest-valued color in selectedMTGColor
+  interface Value {
+    key?: string,
+    value: number;
+  }
+  // Assign numbers to each value in selectedMTGColor
+  let mtgColorMapSelected = new Map<string, number>();
+  mtgColor.forEach(function(key) {
+    mtgColorMapSelected.set(key, ee23Record[key])
+  })
+  
+  // const greatest = mtgColorMapSelected.forEach(accumulator: Value, element: Value) => {
+  //     if (accumulator["value"] > element["value"])
+  //         return accumulator;
+  //     return element;
+  // });
+
+  var high = 0 //default 'uncolored'
+  for (let value of mtgColorMapSelected.values()) {
+    if (value > high){
+      high = value
+    }
+  }
+  // get the lowest-valued color in selectedMTGColor
+  var low = 5 //default 'green'
+  for (let value of mtgColorMapSelected.values()) {
+    if (value < low){
+      low = value
+    }
+  }
+  
   let groups = useMemo(
-    () => times(mtgColor.size, (n) => n), [],
+    () => times(high - low + 1, (n) => n + low - 1),
+    [high, low],
   );
 
   function toggleForceDistribution() {

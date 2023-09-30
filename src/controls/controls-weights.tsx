@@ -154,14 +154,12 @@ export function ColorWeightsControls({ mtgColor }: ColorProps) {
   const {
     weights,
     forceDistribution,
-    groupSongsAt,
     updateConfig,
     totalToDraw,
   } = useConfigState(
     (cfg) => ({
       weights: cfg.weights,
       forceDistribution: cfg.forceDistribution,
-      groupSongsAt: cfg.groupSongsAt,
       updateConfig: cfg.update,
       totalToDraw: cfg.chartCount,
     }),
@@ -187,10 +185,6 @@ export function ColorWeightsControls({ mtgColor }: ColorProps) {
       }
       return { weights: newWeights };
     });
-  }
-
-  if (groupSongsAt) {
-    groups = groups.filter((l) => l <= groupSongsAt);
   }
   const totalWeight = groups.reduce(
     (total, group) => total + (weights[group] || 0),
@@ -231,7 +225,6 @@ export function ColorWeightsControls({ mtgColor }: ColorProps) {
             placeholder="0"
             fill
           />
-          {groupSongsAt === group && ">="}
           <sub>{percentages[i]}</sub>
         </div>
       ))}

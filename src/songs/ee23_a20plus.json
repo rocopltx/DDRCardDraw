@@ -3297,7 +3297,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "challenge",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 248,
@@ -3742,7 +3742,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 310,
@@ -3811,7 +3811,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 712,
@@ -8948,7 +8948,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "challenge",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 186,
@@ -9540,7 +9540,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 217,
@@ -9848,7 +9848,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 7,
@@ -11397,7 +11397,7 @@
           "flags": [
             "shock"
           ],
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 150,
@@ -14505,7 +14505,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 563,
@@ -16847,7 +16847,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "challenge",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 238,
@@ -18503,7 +18503,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 7,
@@ -21428,7 +21428,7 @@
           "flags": [
             "shock"
           ],
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 124,
@@ -21629,7 +21629,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 6,
@@ -30799,7 +30799,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 8,
@@ -33299,7 +33299,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 8,
@@ -34155,7 +34155,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "difficult",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 522,
@@ -35954,7 +35954,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "difficult",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 18,
@@ -38790,7 +38790,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 8,
@@ -39955,7 +39955,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 233,
@@ -42577,7 +42577,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 7,
@@ -44017,7 +44017,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 181,
@@ -44145,7 +44145,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 198,
@@ -45248,7 +45248,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 208,
@@ -51332,7 +51332,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 475,
@@ -51340,7 +51340,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "challenge",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 159,
@@ -52728,7 +52728,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 223,
@@ -54837,7 +54837,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 210,
@@ -55182,7 +55182,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "challenge",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 217,
@@ -57271,7 +57271,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "challenge",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "lvl": 7,
@@ -64896,7 +64896,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "expert",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 266,
@@ -65493,7 +65493,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "challenge",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 161,
@@ -67882,7 +67882,7 @@
           "lvl": 15,
           "style": "single",
           "diffClass": "challenge",
-          "mtgColor": "uncolored"
+          "mtgColor": "red"
         },
         {
           "step": 193,

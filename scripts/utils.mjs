@@ -31,12 +31,9 @@ export async function writeJsonData(data, filePath) {
   try {
     formatted = await format(JSON.stringify(data), { filepath: filePath });
   } catch (e) {
-    throw new Error('Formatting failed', { cause: e });
+    throw new Error("Formatting failed", { cause: e });
   }
-  return promises.writeFile(
-    filePath,
-    formatted,
-  );
+  return promises.writeFile(filePath, formatted);
 }
 
 /** @type {PQueue} */

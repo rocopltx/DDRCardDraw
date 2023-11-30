@@ -33,7 +33,6 @@ import { GameData } from "../models/SongData";
 import { RemotePeerControls } from "../tournament-mode/remote-peer-menu";
 import { useRemotePeers } from "../tournament-mode/remote-peers";
 import { WeightsControls } from "./controls-weights";
-import { ColorWeightsControls } from "./controls-weights";
 import styles from "./controls.css";
 import { PlayerNamesControls } from "./player-names";
 import { loadConfig, saveConfig } from "../config-persistence";
@@ -55,10 +54,10 @@ function getAvailableMTGColors(gameData: GameData, selectedMTGColor: string) {
   // Fall back to use the uncolored dict.
   const notDefined = [
     {
-      "key": "uncolored",
-      "color": "#ffffff"
-    }
-  ]
+      key: "uncolored",
+      color: "#ffffff",
+    },
+  ];
   const s = new Set<string>();
   for (const f of gameData.songs) {
     for (const c of f.charts) {
@@ -69,7 +68,6 @@ function getAvailableMTGColors(gameData: GameData, selectedMTGColor: string) {
   }
   return gameData.meta.mtgColor ?? notDefined.filter((d) => s.has(d.key));
 }
-
 
 function getDiffsAndRangeForNewStyle(
   gameData: GameData,
@@ -269,7 +267,6 @@ function GeneralSettings() {
   const configState = useConfigState();
   const {
     useWeights,
-    useWeightsColor,
     constrainPocketPicks,
     orderByAction,
     hideVetos,
@@ -292,7 +289,7 @@ function GeneralSettings() {
       return [];
     }
     return getAvailableMTGColors(gameData, selectedStyle);
-  }, [gameData, selectedStyle])
+  }, [gameData, selectedStyle]);
   const isNarrow = useIsNarrow();
   const [expandFilters, setExpandFilters] = useState(false);
 
@@ -528,20 +525,6 @@ function GeneralSettings() {
             usesTiers={usesDrawGroups}
             high={upperBound}
             low={lowerBound}
-          />
-        </Collapse>
-        <Checkbox
-          id="weightedColor"
-          checked={useWeightsColor}
-          onChange={(e) => {
-            const useWeightsColor = !!e.currentTarget.checked;
-            updateState({ useWeightsColor });
-          }}
-          label={t("controls.useWeightedMTGColorDistributions")}
-        />
-        <Collapse isOpen={useWeightsColor}>
-          <ColorWeightsControls
-            mtgColor = {selectedMTGColor}
           />
         </Collapse>
       </FormGroup>

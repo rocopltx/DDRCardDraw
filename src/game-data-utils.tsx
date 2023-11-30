@@ -30,7 +30,10 @@ export function getDiffAbbr(gameData: GameData, diffClass: string) {
 }
 
 // Eclipse 2023 DDR A20+
-export function getMTGColorAbbr(gameData: GameData, mtgColor: string = "uncolored") {
+export function getMTGColorAbbr(
+  gameData: GameData,
+  mtgColor: string = "uncolored",
+) {
   return ((gameData.i18n.en as I18NDict)["$mtgAbbr"] as I18NDict)[
     mtgColor
   ] as string;

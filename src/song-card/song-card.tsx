@@ -89,7 +89,6 @@ export function SongCard(props: Props) {
     artistTranslation,
     bpm,
     diffAbbr,
-    diffColor,
     mtgColorAbbr,
     mtgColorColor,
     level,
